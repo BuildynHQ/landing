@@ -41,21 +41,21 @@ export function Process() {
   return (
     <section
       id="process"
-      className="relative overflow-hidden bg-ink px-6 py-28 text-ivory sm:px-10 sm:py-36"
+      className="relative overflow-hidden border-y border-ink/5 bg-ink/[0.03] px-6 py-28 text-ink backdrop-blur-md sm:px-10 sm:py-36"
     >
       <div
         aria-hidden
         className="pointer-events-none absolute right-0 top-0 h-[60vmin] w-[60vmin] rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(192,56,43,0.28), transparent 65%)",
+            "radial-gradient(circle, rgba(192,56,43,0.18), transparent 65%)",
         }}
       />
       <div className="mx-auto max-w-[1400px]">
         <Reveal>
           <div className="flex items-center gap-3">
             <span className="h-px w-10 bg-crimson" />
-            <span className="font-sans text-xs uppercase tracking-[0.35em] text-ivory/50">
+            <span className="font-sans text-xs uppercase tracking-[0.35em] text-ink-soft/60">
               Process
             </span>
           </div>
@@ -69,7 +69,7 @@ export function Process() {
 
         <div ref={ref} className="relative mt-20 pl-8 sm:pl-16">
           {/* track */}
-          <div className="absolute left-0 top-0 h-full w-px bg-ivory/15 sm:left-2" />
+          <div className="absolute left-0 top-0 h-full w-px bg-ink/10 sm:left-2" />
           {/* progress */}
           <motion.div
             style={{ scaleY: lineScale, originY: 0 }}
@@ -83,11 +83,11 @@ export function Process() {
                   <span className="font-display text-5xl font-extrabold text-crimson/80 sm:text-6xl">
                     {s.no}
                   </span>
-                  <div className="max-w-xl border-t border-ivory/10 pt-5">
+                  <div className="max-w-xl border-t border-ink/10 pt-5">
                     <h3 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
                       {s.title}
                     </h3>
-                    <p className="mt-3 font-sans text-base leading-relaxed text-ivory/60">
+                    <p className="mt-3 font-sans text-base leading-relaxed text-ink-soft/70">
                       {s.desc}
                     </p>
                   </div>
