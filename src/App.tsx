@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { useLenis } from "./hooks/useLenis";
 import { Loader } from "./components/Loader";
 import { Nav } from "./components/Nav";
@@ -10,7 +10,12 @@ import { Services } from "./sections/Services";
 import { Process } from "./sections/Process";
 import { Contact } from "./sections/Contact";
 import { Footer } from "./sections/Footer";
-import { CinematicScene } from "./components/CinematicScene";
+
+const CinematicScene = lazy(() =>
+  import("./components/CinematicScene").then((module) => ({
+    default: module.CinematicScene,
+  })),
+);
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
@@ -19,7 +24,11 @@ export default function App() {
   return (
     <>
       <Loader onComplete={() => setLoaded(true)} />
-      <CinematicScene />
+      {loaded ? (
+        <Suspense fallback={null}>
+          <CinematicScene />
+        </Suspense>
+      ) : null}
 
       {/* atmospheric overlays */}
       <div className="grain" aria-hidden />
@@ -45,4 +54,3 @@ export default function App() {
     </>
   );
 }
-

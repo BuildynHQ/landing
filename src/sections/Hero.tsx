@@ -92,9 +92,9 @@ export function Hero() {
       lg:text-[8.5vw]
     "
     lines={[
-      <>Digital experiences</>,
+        <>Website design</>,
       <>
-        that feel{" "}
+          branding and UI/UX{" "}
         <span className="font-serif font-normal italic">
           intentional.
         </span>
@@ -111,9 +111,9 @@ export function Hero() {
             transition={{ delay: 0.9, duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-md font-sans text-base leading-relaxed text-ink-soft sm:text-lg"
           >
-            We build modern internet presence for brands, creators and
-            ambitious businesses — design, story and motion shaped into
-            atmospheres people remember.
+            We build website design, landing pages, branding and UI/UX for
+            startups and ambitious brands — strategy, story and motion shaped
+            into atmospheres people remember.
           </motion.p>
 
           <motion.div

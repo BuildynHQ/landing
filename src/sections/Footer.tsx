@@ -21,29 +21,41 @@ export function Footer() {
               <span className="font-sans text-xs uppercase tracking-[0.3em] text-ink-soft/60">
                 Menu
               </span>
-              {["Work", "Studio", "Services", "Process"].map((l) => (
-                <a
-                  key={l}
-                  href={`#${l.toLowerCase() === "studio" ? "philosophy" : l.toLowerCase()}`}
-                  className="font-sans text-sm text-ink transition-colors hover:text-crimson"
-                >
-                  {l}
-                </a>
-              ))}
+              <a href="#work" className="font-sans text-sm text-ink transition-colors hover:text-crimson">
+                Work
+              </a>
+              <a href="#philosophy" className="font-sans text-sm text-ink transition-colors hover:text-crimson">
+                Studio
+              </a>
+              <a href="#services" className="font-sans text-sm text-ink transition-colors hover:text-crimson">
+                Services
+              </a>
+              <a href="#process" className="font-sans text-sm text-ink transition-colors hover:text-crimson">
+                Process
+              </a>
             </div>
             <div className="flex flex-col gap-3">
               <span className="font-sans text-xs uppercase tracking-[0.3em] text-ink-soft/60">
-                Social
+                Contact
               </span>
-              {["Instagram", "Behance", "X / Twitter", "LinkedIn"].map((l) => (
-                <a
-                  key={l}
-                  href="#"
-                  className="font-sans text-sm text-ink transition-colors hover:text-crimson"
-                >
-                  {l}
-                </a>
-              ))}
+              <a
+                href="mailto:hello@buildyn.studio"
+                className="font-sans text-sm text-ink transition-colors hover:text-crimson"
+              >
+                hello@buildyn.studio
+              </a>
+              <a
+                href="#services"
+                className="font-sans text-sm text-ink transition-colors hover:text-crimson"
+              >
+                Website design
+              </a>
+              <a
+                href="#contact"
+                className="font-sans text-sm text-ink transition-colors hover:text-crimson"
+              >
+                Start a project
+              </a>
             </div>
           </div>
         </div>
