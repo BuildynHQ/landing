@@ -18,16 +18,16 @@ const projects: Project[] = [
     category: "Brand · Website",
     year: "2025",
     image:
-      "https://images.pexels.com/photos/16159464/pexels-photo-16159464.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
+      "https://images.pexels.com/photos/3407857/pexels-photo-3407857.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
     tone: "Architecture studio identity & immersive portfolio.",
   },
   {
     index: "02",
-    title: "Maison Rouge",
+    title: "Sienvera",
     category: "Branding · Art Direction",
     year: "2025",
     image:
-      "https://images.pexels.com/photos/31022528/pexels-photo-31022528.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
+      "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
     tone: "A bold editorial identity for a fashion house.",
   },
   {
@@ -36,7 +36,7 @@ const projects: Project[] = [
     category: "Website · UI/UX",
     year: "2024",
     image:
-      "https://images.pexels.com/photos/37178180/pexels-photo-37178180.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
+      "https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
     tone: "A warm, tactile digital home for a specialty café.",
   },
   {
@@ -45,7 +45,7 @@ const projects: Project[] = [
     category: "Creative Direction",
     year: "2024",
     image:
-      "https://images.pexels.com/photos/32655937/pexels-photo-32655937.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
+      "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
     tone: "Geometric campaign system for a design collective.",
   },
 ];
