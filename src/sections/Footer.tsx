@@ -21,16 +21,28 @@ export function Footer() {
               <span className="font-sans text-xs uppercase tracking-[0.3em] text-ink-soft/60">
                 Menu
               </span>
-              <a href="#work" className="font-sans text-sm text-ink transition-colors hover:text-crimson">
+              <a
+                href="#work"
+                className="font-sans text-sm text-ink transition-colors hover:text-crimson"
+              >
                 Work
               </a>
-              <a href="#philosophy" className="font-sans text-sm text-ink transition-colors hover:text-crimson">
+              <a
+                href="#philosophy"
+                className="font-sans text-sm text-ink transition-colors hover:text-crimson"
+              >
                 Studio
               </a>
-              <a href="#services" className="font-sans text-sm text-ink transition-colors hover:text-crimson">
+              <a
+                href="#services"
+                className="font-sans text-sm text-ink transition-colors hover:text-crimson"
+              >
                 Services
               </a>
-              <a href="#process" className="font-sans text-sm text-ink transition-colors hover:text-crimson">
+              <a
+                href="#process"
+                className="font-sans text-sm text-ink transition-colors hover:text-crimson"
+              >
                 Process
               </a>
             </div>
