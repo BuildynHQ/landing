@@ -121,18 +121,18 @@ export function Work() {
               </span>
             </div>
             <h2 className="mt-5 max-w-2xl font-display text-[10vw] font-extrabold leading-[0.95] tracking-tight text-ink sm:text-6xl lg:text-7xl">
-              An exhibition of
+              Website design and branding
               <br />
               <span className="font-serif font-normal italic text-crimson">
-                intentional
+                built for startups.
               </span>{" "}
-              work.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="max-w-xs font-sans text-sm leading-relaxed text-ink-soft">
-              A small, curated selection. Each project is treated as a campaign —
-              art-directed end to end.
+              A small, curated selection of website design, landing page design
+              and branding work. Each project is treated as a campaign — art-
+              directed end to end.
             </p>
           </Reveal>
         </div>

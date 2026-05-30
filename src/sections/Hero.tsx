@@ -27,11 +27,10 @@ export function Hero() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-ivory/40 via-transparent to-ivory/90" />
       </motion.div>
-
       {/* soft crimson glow */}
       <motion.div
-  aria-hidden
-  className="
+        aria-hidden
+        className="
     pointer-events-none
     absolute
     -right-[15%]
@@ -42,30 +41,34 @@ export function Hero() {
     rounded-full
     blur-[100px]
   "
-  style={{
-    background:
-      "radial-gradient(circle, rgba(192,56,43,0.12), transparent 70%)",
-  }}
-  animate={{
-    scale: [1, 1.08, 1],
-    opacity: [0.5, 0.8, 0.5],
-  }}
-  transition={{
-    duration: 12,
-    repeat: Infinity,
-    ease: "easeInOut",
-  }}
-/>
-<div
-  className="pointer-events-none absolute inset-0 z-0"
-  style={{
-    background:
-      "linear-gradient(to bottom, rgba(0,0,0,.08), rgba(0,0,0,.22))",
-  }}
-/>
+        style={{
+          background:
+            "radial-gradient(circle, rgba(192,56,43,0.12), transparent 70%)",
+        }}
+        animate={{
+          scale: [1, 1.08, 1],
+          opacity: [0.5, 0.8, 0.5],
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+      <div
+        className="pointer-events-none absolute inset-0 z-0"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,.08), rgba(0,0,0,.22))",
+        }}
+      />
       {/* line texture */}
-{/* line texture */}
-<div className="line-texture pointer-events-none absolute inset-0 -z-10 opacity-20" />      <motion.div style={{ y: contentY, opacity: fade }} className="mx-auto w-full max-w-[1600px]">
+      {/* line texture */}
+      <div className="line-texture pointer-events-none absolute inset-0 -z-10 opacity-20" />{" "}
+      <motion.div
+        style={{ y: contentY, opacity: fade }}
+        className="mx-auto w-full max-w-[1600px]"
+      >
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -79,9 +82,9 @@ export function Hero() {
         </motion.div>
 
         <div className="relative z-20">
-  <MaskedHeading
-    as="h1"
-    className="
+          <MaskedHeading
+            as="h1"
+            className="
       hero-blend
       font-display
       text-[13vw]
@@ -91,19 +94,19 @@ export function Hero() {
       sm:text-[11vw]
       lg:text-[8.5vw]
     "
-    lines={[
-      <>Digital experiences</>,
-      <>
-        that feel{" "}
-        <span className="font-serif font-normal italic">
-          intentional.
-        </span>
-      </>,
-    ]}
-    stagger={0.14}
-    delay={0.2}
-  />
-</div>
+            lines={[
+              <>Website design</>,
+              <>
+                branding and UI/UX{" "}
+                <span className="font-serif font-normal italic">
+                  intentional.
+                </span>
+              </>,
+            ]}
+            stagger={0.14}
+            delay={0.2}
+          />
+        </div>
         <div className="mt-10 flex flex-col items-start gap-10 md:flex-row md:items-end md:justify-between">
           <motion.p
             initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
@@ -111,9 +114,9 @@ export function Hero() {
             transition={{ delay: 0.9, duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-md font-sans text-base leading-relaxed text-ink-soft sm:text-lg"
           >
-            We build modern internet presence for brands, creators and
-            ambitious businesses — design, story and motion shaped into
-            atmospheres people remember.
+            We build website design, landing pages, branding and UI/UX for
+            startups and ambitious brands — strategy, story and motion shaped
+            into atmospheres people remember.
           </motion.p>
 
           <motion.div
@@ -140,7 +143,6 @@ export function Hero() {
           </motion.div>
         </div>
       </motion.div>
-
       {/* scroll cue */}
       <motion.div
         style={{ opacity: fade }}

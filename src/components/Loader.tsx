@@ -6,10 +6,14 @@ export function Loader({ onComplete }: { onComplete: () => void }) {
   const [done, setDone] = useState(false);
 
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const total = reduced ? 400 : 2000;
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    const total = reduced ? 220 : 900;
     const start = performance.now();
     let raf = 0;
+    let hideTimer = 0;
+    let completeTimer = 0;
 
     const tick = (now: number) => {
       const p = Math.min(1, (now - start) / total);
@@ -19,12 +23,16 @@ export function Loader({ onComplete }: { onComplete: () => void }) {
       if (p < 1) {
         raf = requestAnimationFrame(tick);
       } else {
-        setTimeout(() => setDone(true), 320);
-        setTimeout(onComplete, 1180);
+        hideTimer = window.setTimeout(() => setDone(true), 220);
+        completeTimer = window.setTimeout(onComplete, 650);
       }
     };
     raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.clearTimeout(hideTimer);
+      window.clearTimeout(completeTimer);
+    };
   }, [onComplete]);
 
   return (

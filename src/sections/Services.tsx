@@ -3,13 +3,13 @@ import { Reveal } from "../components/Reveal";
 const services = [
   {
     no: "01",
-    title: "Websites",
-    desc: "Custom, hand-built websites that turn brands into immersive digital atmospheres.",
+    title: "Website Design",
+    desc: "Custom websites that turn startups and modern brands into immersive digital atmospheres.",
   },
   {
     no: "02",
-    title: "Landing Pages",
-    desc: "High-conversion, cinematic single pages engineered to make a first impression land.",
+    title: "Landing Page Design",
+    desc: "High-conversion landing pages engineered to make a first impression land and convert.",
   },
   {
     no: "03",
@@ -18,7 +18,7 @@ const services = [
   },
   {
     no: "04",
-    title: "UI / UX Design",
+    title: "UI/UX Design",
     desc: "Interfaces designed around feeling and flow, not just function and grids.",
   },
   {
@@ -28,8 +28,8 @@ const services = [
   },
   {
     no: "06",
-    title: "SEO & Optimization",
-    desc: "Performance, structure and visibility — premium that loads fast and ranks.",
+    title: "SEO Setup",
+    desc: "Technical SEO foundations for performance, indexing and discoverability from day one.",
   },
 ];
 
@@ -46,9 +46,9 @@ export function Services() {
               </span>
             </div>
             <h2 className="mt-5 max-w-2xl font-display text-[10vw] font-extrabold leading-[0.95] tracking-tight text-ink sm:text-6xl lg:text-7xl">
-              What we{" "}
+              Website design, branding and UI/UX{" "}
               <span className="font-serif font-normal italic text-crimson">
-                craft.
+                crafted to rank.
               </span>
             </h2>
           </Reveal>
