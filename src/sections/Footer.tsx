@@ -51,10 +51,10 @@ export function Footer() {
                 Contact
               </span>
               <a
-                href="mailto:hello@buildyn.studio"
+                href="mailto:hello@buildyn.in"
                 className="font-sans text-sm text-ink transition-colors hover:text-crimson"
               >
-                hello@buildyn.studio
+                hello@buildyn.in
               </a>
               <a
                 href="#services"

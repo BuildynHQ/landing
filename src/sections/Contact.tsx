@@ -124,18 +124,42 @@ export function Contact() {
     [form, status],
   );
 
-  const onSubmit = (e: FormEvent) => {
+  const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
     if (!canSubmit) return;
-    setStatus("sending");
-    // Simulate network — wire up to your endpoint here.
-    setTimeout(() => {
+
+    try {
+      setStatus("sending");
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed");
+      }
+
       setStatus("sent");
+
       setTimeout(() => {
-        setForm({ name: "", email: "", message: "" });
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+
         setStatus("idle");
       }, 3200);
-    }, 1200);
+    } catch (error) {
+      console.error(error);
+      alert("Failed to send enquiry.");
+      setStatus("idle");
+    }
   };
 
   return (
@@ -217,11 +241,11 @@ export function Contact() {
                 </div>
 
                 <a
-                  href="mailto:hello@buildyn.studio"
+                  href="mailto:hello@buildyn.in"
                   className="group mt-4 inline-flex items-baseline gap-2 font-display text-xl font-medium text-ink transition-colors hover:text-crimson sm:text-2xl lg:text-2xl"
                 >
                   <span className="bg-gradient-to-r from-crimson to-crimson bg-[length:0_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 group-hover:bg-[length:100%_1px]">
-                    hello@buildyn.studio
+                    hello@buildyn.in
                   </span>
                   <span className="text-crimson transition-transform duration-500 group-hover:translate-x-1">
                     ↗
@@ -234,7 +258,7 @@ export function Contact() {
                       Based in
                     </dt>
                     <dd className="mt-2 text-sm text-ink">
-                      Lisbon / Remote
+                      India / Worldwide
                     </dd>
                   </div>
                   <div>
@@ -323,8 +347,8 @@ export function Contact() {
 
                       <button
                         type="submit"
-                        disabled={false}
-                        className="group mt-2 flex items-center justify-center gap-3 rounded-full bg-ink py-4 font-sans text-sm text-ivory transition-all duration-500 hover:bg-crimson"
+                        disabled={!canSubmit || status === "sending"}
+                        className="group mt-2 flex items-center justify-center gap-3 rounded-full bg-ink py-4 font-sans text-sm text-ivory transition-all duration-500 hover:bg-crimson disabled:cursor-not-allowed disabled:opacity-50"
                       >
                         {status === "sending" ? (
                           <>
