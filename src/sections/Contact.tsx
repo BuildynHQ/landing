@@ -323,8 +323,8 @@ export function Contact() {
 
                       <button
                         type="submit"
-                        disabled={!canSubmit}
-                        className="group mt-2 flex items-center justify-center gap-3 rounded-full bg-ink py-4 font-sans text-sm text-ivory transition-all duration-500 hover:bg-crimson disabled:cursor-not-allowed disabled:opacity-50"
+                        disabled={false}
+                        className="group mt-2 flex items-center justify-center gap-3 rounded-full bg-ink py-4 font-sans text-sm text-ivory transition-all duration-500 hover:bg-crimson"
                       >
                         {status === "sending" ? (
                           <>
