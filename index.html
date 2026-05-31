@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Buildyn | Website Design, Branding & UI/UX for Startups</title>
+    <title>Buildyn | Digital Presence, Built to Be Remembered</title>
     <meta
       name="title"
-      content="Buildyn | Website Design, Branding & UI/UX for Startups"
+      content="Buildyn | Digital Presence, Built to Be Remembered"
     />
     <meta
       name="description"
-      content="Buildyn is a creative digital studio for website design, landing page design, branding, UI/UX, creative direction and SEO setup for startups and modern brands."
+      content="Buildyn creates memorable digital presence through websites, branding, UI/UX and creative direction for ambitious brands."
     />
     <meta
       name="keywords"
@@ -31,16 +31,16 @@
     <meta property="og:url" content="https://buildyn.in/" />
     <meta
       property="og:title"
-      content="Buildyn | Website Design, Branding & UI/UX for Startups"
+      content="Buildyn | Digital Presence, Built to Be Remembered"
     />
     <meta
       property="og:description"
-      content="Buildyn designs websites, landing pages, branding and UI/UX for startups and modern brands."
+      content="Buildyn creates memorable digital presence through websites, branding, UI/UX and creative direction for ambitious brands."
     />
-    <meta
-      property="og:image"
-      content="https://buildyn.in/images/hero-atmosphere.jpg"
-    />
+    <meta property="og:image" content="https://buildyn.in/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Buildyn Creative Digital Studio" />
     <meta property="og:site_name" content="BUILDYN" />
     <meta property="og:locale" content="en_US" />
 
@@ -49,19 +49,17 @@
     <meta property="twitter:url" content="https://buildyn.in/" />
     <meta
       property="twitter:title"
-      content="Buildyn | Website Design, Branding & UI/UX for Startups"
+      content="Buildyn | Digital Presence, Built to Be Remembered"
     />
     <meta
       property="twitter:description"
-      content="Buildyn designs websites, landing pages, branding and UI/UX for startups and modern brands."
+      content="Buildyn creates memorable digital presence through websites, branding, UI/UX and creative direction for ambitious brands."
     />
-    <meta
-      property="twitter:image"
-      content="https://buildyn.in/images/hero-atmosphere.jpg"
-    />
+    <meta property="twitter:image" content="https://buildyn.in/og-image.png" />
+   
 
-    <!-- Additional Meta Tags -->
-    <meta name="theme-color" content="#000000" />
+    <!-- Theme & PWA -->
+    <meta name="theme-color" content="#0a0a0a" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -71,9 +69,13 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://buildyn.in/" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Schema.org -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -83,55 +85,19 @@
             "@id": "https://buildyn.in/#organization",
             "name": "Buildyn",
             "url": "https://buildyn.in/",
-            "description": "A creative digital studio specializing in website design, landing page design, branding, UI/UX, creative direction and SEO setup.",
+            "description": "Buildyn creates memorable digital presence through websites, branding, UI/UX systems and creative direction for ambitious brands.",
             "email": "hello@buildyn.studio",
-            "logo": "https://buildyn.in/images/hero-atmosphere.jpg",
+            "logo": "https://buildyn.in/logo.png",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "Buildyn Services",
               "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Website Design"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Landing Page Design"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "UI/UX Design"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Branding"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Creative Direction"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "SEO Setup"
-                  }
-                }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Design" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landing Page Design" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "UI/UX Design" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Branding" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Creative Direction" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Setup" } }
               ]
             }
           },
@@ -140,9 +106,7 @@
             "@id": "https://buildyn.in/#website",
             "url": "https://buildyn.in/",
             "name": "Buildyn",
-            "publisher": {
-              "@id": "https://buildyn.in/#organization"
-            },
+            "publisher": { "@id": "https://buildyn.in/#organization" },
             "inLanguage": "en"
           }
         ]
