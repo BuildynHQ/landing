@@ -181,8 +181,7 @@ const projects: Project[] = [
     title: "Sonder Cafe",
     category: "Brand · Website",
     year: "2025",
-    image:
-      "https://images.pexels.com/photos/3407857/pexels-photo-3407857.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
+    image: "/images/Sonder-cafe.png",
     tone: "Architecture studio identity & immersive portfolio.",
   },
   {
@@ -190,8 +189,7 @@ const projects: Project[] = [
     title: "Sienvera",
     category: "Branding · Art Direction",
     year: "2025",
-    image:
-      "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
+    image: "/images/Sienvera.png",
     tone: "A bold editorial identity for a fashion house.",
   },
   {
@@ -199,8 +197,7 @@ const projects: Project[] = [
     title: "Folio Café",
     category: "Website · UI/UX",
     year: "2024",
-    image:
-      "https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
+    image: "/images/folio-cafe.png",
     tone: "A warm, tactile digital home for a specialty café.",
   },
   {
@@ -208,8 +205,7 @@ const projects: Project[] = [
     title: "Form & Field",
     category: "Creative Direction",
     year: "2024",
-    image:
-      "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1400",
+    image: "/images/form-field.png",
     tone: "Geometric campaign system for a design collective.",
   },
 ];
