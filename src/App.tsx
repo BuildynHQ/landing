@@ -1,15 +1,10 @@
 import { lazy, Suspense, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import { useLenis } from "./hooks/useLenis";
 import { Loader } from "./components/Loader";
 import { Nav } from "./components/Nav";
-import { Hero } from "./sections/Hero";
-import { Marquee } from "./components/Marquee";
-import { Work } from "./sections/Work";
-import { Philosophy } from "./sections/Philosophy";
-import { Services } from "./sections/Services";
-import { Process } from "./sections/Process";
-import { Contact } from "./sections/Contact";
-import { Footer } from "./sections/Footer";
+import Home from "./pages/Home";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const CinematicScene = lazy(() =>
   import("./components/CinematicScene").then((module) => ({
@@ -41,15 +36,11 @@ export default function App() {
       >
         <Nav />
         <main>
-          <Hero />
-          <Marquee />
-          <Work />
-          <Philosophy />
-          <Services />
-          <Process />
-          <Contact />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          </Routes>
         </main>
-        <Footer />
       </div>
     </>
   );
