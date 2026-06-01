@@ -223,41 +223,44 @@ function ProjectCard({ project, i }: { project: Project; i: number }) {
     <Reveal y={48} className={offset}>
       <div ref={ref} className="group relative">
         <a href="#contact" className="block">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-paper sm:aspect-[4/3]">
-            <motion.img
-              src={project.image}
-              alt={project.title}
-              loading="lazy"
-              style={{ y: imgY }}
-              className="absolute inset-0 h-[124%] w-full -translate-y-[8%] object-cover grayscale-[0.25] transition-all duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:grayscale-0"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent opacity-60 transition-opacity duration-700 group-hover:opacity-30" />
-
-            <span className="absolute left-5 top-5 font-display text-sm font-medium text-ivory mix-blend-difference">
-              ({project.index})
-            </span>
-
-            <div className="absolute bottom-5 right-5 flex h-12 w-12 translate-y-3 items-center justify-center rounded-full bg-ivory text-ink opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-              →
+          <div className="group overflow-hidden rounded-[28px] border border-white/10 bg-black/40 backdrop-blur-sm transition-all duration-500 hover:border-red-500/30">
+            {/* Image */}
+            <div className="relative aspect-[16/10] overflow-hidden">
+              <motion.img
+                src={project.image}
+                alt={project.title}
+                loading="lazy"
+                decoding="async"
+                style={{ y: imgY }}
+                className="absolute inset-0 h-[120%] w-full -translate-y-[10%] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
             </div>
-          </div>
 
-          <div className="mt-5 flex items-start justify-between gap-4">
-            <div>
-              <h3 className="font-display text-2xl font-semibold tracking-tight text-ink transition-colors duration-500 group-hover:text-crimson sm:text-3xl">
-                {project.title}
-              </h3>
-              <p className="mt-1 max-w-sm font-sans text-sm text-ink-soft">
-                {project.tone}
-              </p>
-            </div>
-            <div className="text-right">
-              <p className="font-sans text-xs uppercase tracking-widest text-ink-soft">
-                {project.category}
-              </p>
-              <p className="mt-1 font-sans text-xs text-ink-soft/60">
-                {project.year}
-              </p>
+            {/* Bottom Content */}
+            <div className="flex items-end justify-between border-t border-white/5 bg-black/70 px-8 py-6">
+              <div>
+                <div className="mb-2 flex items-center gap-3">
+                  <span className="font-mono text-red-500">
+                    {String(project.index).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-3xl font-medium text-white">
+                    {project.title}
+                  </h3>
+                </div>
+                <p className="max-w-md text-zinc-400">
+                  {project.tone}
+                </p>
+              </div>
+
+              <div className="text-right">
+                <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">
+                  {project.category}
+                </p>
+                <p className="mt-2 text-zinc-400">
+                  {project.year}
+                </p>
+              </div>
             </div>
           </div>
         </a>
