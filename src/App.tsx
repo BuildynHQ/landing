@@ -4,8 +4,8 @@ import { useLenis } from "./hooks/useLenis";
 import { Loader } from "./components/Loader";
 import { Nav } from "./components/Nav";
 import Home from "./pages/Home";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
 
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const CinematicScene = lazy(() =>
   import("./components/CinematicScene").then((module) => ({
     default: module.CinematicScene,
@@ -38,7 +38,22 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route
+              path="/privacy-policy"
+              element={
+                <Suspense
+                  fallback={
+                    <div className="min-h-screen bg-[#090909] flex items-center justify-center text-white">
+                      <div className="text-center">
+                        <p className="text-sm text-zinc-400">Loading...</p>
+                      </div>
+                    </div>
+                  }
+                >
+                  <PrivacyPolicy />
+                </Suspense>
+              }
+            />
           </Routes>
         </main>
       </div>
