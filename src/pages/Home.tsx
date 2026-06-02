@@ -79,7 +79,7 @@ function Hero() {
         >
           <span className="h-px w-10 bg-crimson" />
           <span className="font-sans text-xs uppercase tracking-[0.35em] text-ink-soft">
-            Creative Digital Studio — Est. 2024
+            Creative Digital Studio — Est. 2026
           </span>
         </motion.div>
 
@@ -173,6 +173,7 @@ type Project = {
   year: string;
   image: string;
   tone: string;
+  liveDemo: string;
 };
 
 const projects: Project[] = [
@@ -183,6 +184,7 @@ const projects: Project[] = [
     year: "2025",
     image: "/images/Sonder-cafe.png",
     tone: "Architecture studio identity & immersive portfolio.",
+    liveDemo: "https://sonder-cafe.vercel.app/",
   },
   {
     index: "02",
@@ -191,22 +193,25 @@ const projects: Project[] = [
     year: "2025",
     image: "/images/Sienvera.png",
     tone: "A bold editorial identity for a fashion house.",
+    liveDemo: "https://sienvera.vercel.app/",
   },
   {
     index: "03",
     title: "Folio Café",
     category: "Website · UI/UX",
-    year: "2024",
+    year: "2026",
     image: "/images/folio-cafe.png",
     tone: "A warm, tactile digital home for a specialty café.",
+    liveDemo: "#contact",
   },
   {
     index: "04",
     title: "Form & Field",
     category: "Creative Direction",
-    year: "2024",
+    year: "2026",
     image: "/images/form-field.png",
     tone: "Geometric campaign system for a design collective.",
+    liveDemo: "#contact",
   },
 ];
 
@@ -222,7 +227,12 @@ function ProjectCard({ project, i }: { project: Project; i: number }) {
   return (
     <Reveal y={48} className={offset}>
       <div ref={ref} className="group relative">
-        <a href="#contact" className="block">
+        <a
+          href={project.liveDemo}
+          target={project.liveDemo.startsWith("http") ? "_blank" : undefined}
+          rel={project.liveDemo.startsWith("http") ? "noreferrer" : undefined}
+          className="block"
+        >
           <div className="group overflow-hidden rounded-[28px] border border-white/10 bg-black/40 backdrop-blur-sm transition-all duration-500 hover:border-red-500/30">
             {/* Image */}
             <div className="relative aspect-[16/10] overflow-hidden">
@@ -238,7 +248,7 @@ function ProjectCard({ project, i }: { project: Project; i: number }) {
             </div>
 
             {/* Bottom Content */}
-            <div className="flex items-end justify-between border-t border-white/5 bg-black/70 px-8 py-6">
+            <div className="flex items-end justify-between gap-6 border-t border-white/5 bg-black/70 px-8 py-6">
               <div>
                 <div className="mb-2 flex items-center gap-3">
                   <span className="font-mono text-red-500">
@@ -260,6 +270,9 @@ function ProjectCard({ project, i }: { project: Project; i: number }) {
                 <p className="mt-2 text-zinc-400">
                   {project.year}
                 </p>
+                <span className="mt-4 inline-flex rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.28em] text-white transition-colors duration-500 group-hover:border-red-500/40 group-hover:text-red-300">
+                  View
+                </span>
               </div>
             </div>
           </div>
