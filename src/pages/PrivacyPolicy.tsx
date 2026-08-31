@@ -21,24 +21,6 @@ const sections = [
       "Information is used to respond to enquiries, communicate about projects, improve our services and maintain website security."
   },
   {
-    id: "email",
-    title: "Email Communications",
-    content:
-      "When you submit an enquiry, we may send confirmations, project updates and responses to your requests."
-  },
-  {
-    id: "analytics",
-    title: "Analytics",
-    content:
-      "We may use analytics tools to understand visitor behaviour and improve website performance."
-  },
-  {
-    id: "cookies",
-    title: "Cookies",
-    content:
-      "Cookies may be used to improve functionality and understand website usage patterns."
-  },
-  {
     id: "third-party",
     title: "Third-Party Services",
     content:
@@ -61,6 +43,24 @@ const sections = [
     title: "Contact",
     content:
       "For privacy-related enquiries contact hello@buildyn.in."
+  },
+  {
+    id: "email",
+    title: "Email Communications",
+    content:
+      "When you submit an enquiry, we may send confirmations, project updates and responses to your requests."
+  },
+  {
+    id: "analytics",
+    title: "Analytics",
+    content:
+      "We may use analytics tools to understand visitor behaviour and improve website performance."
+  },
+  {
+    id: "cookies",
+    title: "Cookies",
+    content:
+      "Cookies may be used to improve functionality and understand website usage patterns."
   }
 ];
 

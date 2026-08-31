@@ -171,7 +171,7 @@ type Project = {
   title: string;
   category: string;
   year: string;
-  image: string;
+  image?: string;
   tone: string;
   liveDemo: string;
 };
@@ -179,40 +179,29 @@ type Project = {
 const projects: Project[] = [
   {
     index: "01",
-    title: "Sonder Cafe",
-    category: "Brand · Website",
-    year: "2025",
-    image: "/images/Sonder-cafe.png",
-    tone: "Architecture studio identity & immersive portfolio.",
-    liveDemo: "https://sonder-cafe.vercel.app/",
+    title: "WispEcho",
+    category: "Web App · Messaging",
+    year: "2026",
+    tone: "Real-time messaging, but make it premium. Experience the future of communication with View Once media, instant websocket-powered notifications, and a sleek glassmorphic UI designed to keep your conversations private, secure, and visually stunning.",
+    liveDemo: "https://wisp-echo.vercel.app/",
   },
   {
     index: "02",
-    title: "Sienvera",
-    category: "Branding · Art Direction",
+    title: "Sonder Cafe",
+    category: "Brand · Website",
     year: "2025",
-    image: "/images/Sienvera.png",
-    tone: "A bold editorial identity for a fashion house.",
-    liveDemo: "https://sienvera.vercel.app/",
+    tone: "A comprehensive architecture studio identity and immersive digital portfolio. We crafted a tactile, refined experience that showcases their spatial designs through seamless transitions, elegant typography, and a minimalist aesthetic.",
+    liveDemo: "https://sonder-cafe.vercel.app/",
   },
   {
     index: "03",
-    title: "Folio Café",
-    category: "Website · UI/UX",
-    year: "2026",
-    image: "/images/folio-cafe.png",
-    tone: "A warm, tactile digital home for a specialty café.",
-    liveDemo: "#contact",
+    title: "Sienvera",
+    category: "Branding · Art Direction",
+    year: "2025",
+    tone: "A bold editorial identity and e-commerce experience for a luxury fashion house. We focused on high-end art direction, striking visuals, and a fluid user journey that translates the brand's avant-garde vision into the digital space.",
+    liveDemo: "https://sienvera.vercel.app/",
   },
-  {
-    index: "04",
-    title: "Form & Field",
-    category: "Creative Direction",
-    year: "2026",
-    image: "/images/form-field.png",
-    tone: "Geometric campaign system for a design collective.",
-    liveDemo: "#contact",
-  },
+
 ];
 
 function ProjectCard({ project, i }: { project: Project; i: number }) {
@@ -235,20 +224,22 @@ function ProjectCard({ project, i }: { project: Project; i: number }) {
         >
           <div className="group overflow-hidden rounded-[28px] border border-white/10 bg-black/40 backdrop-blur-sm transition-all duration-500 hover:border-red-500/30">
             {/* Image */}
-            <div className="relative aspect-[16/10] overflow-hidden">
-              <motion.img
-                src={project.image}
-                alt={project.title}
-                loading="lazy"
-                decoding="async"
-                style={{ y: imgY }}
-                className="absolute inset-0 h-[120%] w-full -translate-y-[10%] object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
-            </div>
+            {project.image && (
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <motion.img
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                  decoding="async"
+                  style={{ y: imgY }}
+                  className="absolute inset-0 h-[120%] w-full -translate-y-[10%] object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+              </div>
+            )}
 
             {/* Bottom Content */}
-            <div className="flex items-end justify-between gap-6 border-t border-white/5 bg-black/70 px-8 py-6">
+            <div className={`flex items-end justify-between gap-6 bg-black/70 px-8 py-6 ${project.image ? 'border-t border-white/5' : ''}`}>
               <div>
                 <div className="mb-2 flex items-center gap-3">
                   <span className="font-mono text-red-500">
