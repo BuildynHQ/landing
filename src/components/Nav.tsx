@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const links = [
-  { label: "Work", href: "#work" },
-  { label: "Studio", href: "#philosophy" },
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/work" },
+  { label: "Studio", href: "/studio" },
+  { label: "Services", href: "/services" },
+  { label: "Process", href: "/process" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -19,6 +21,11 @@ export function Nav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
 
   return (
     <motion.header
@@ -32,35 +39,44 @@ export function Nav() {
           scrolled ? "py-4" : "py-6"
         }`}
       >
-        <a
-          href="#top"
-          className="font-display text-xl font-extrabold tracking-tight text-ink"
+        <Link
+          to="/"
+          className="font-display text-xl font-extrabold tracking-tight text-ink transition-colors hover:text-crimson"
         >
           BUILDYN<span className="text-crimson">.</span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-9 md:flex">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="group relative font-sans text-sm tracking-wide text-ink-soft transition-colors hover:text-ink"
-            >
-              {l.label}
-              <span className="absolute -bottom-1 left-0 h-px w-0 bg-crimson transition-all duration-500 group-hover:w-full" />
-            </a>
-          ))}
+          {links.map((l) => {
+            const isActive = location.pathname === l.href;
+            return (
+              <Link
+                key={l.href}
+                to={l.href}
+                className={`group relative font-sans text-sm tracking-wide transition-colors ${
+                  isActive ? "text-ink font-medium" : "text-ink-soft hover:text-ink"
+                }`}
+              >
+                {l.label}
+                <span
+                  className={`absolute -bottom-1 left-0 h-px bg-crimson transition-all duration-500 ${
+                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                />
+              </Link>
+            );
+          })}
         </nav>
 
-        <a
-          href="#contact"
+        <Link
+          to="/contact"
           className="hidden items-center gap-2 rounded-full border border-ink/15 bg-ink/[0.03] px-5 py-2 font-sans text-sm text-ink backdrop-blur-sm transition-all duration-500 hover:border-crimson/40 hover:text-crimson md:flex"
         >
           Start a project
           <span className="inline-block transition-transform duration-500 group-hover:translate-x-1">
             →
           </span>
-        </a>
+        </Link>
 
         {/* mobile toggle */}
         <button
@@ -89,23 +105,28 @@ export function Nav() {
         className="overflow-hidden bg-ivory/95 backdrop-blur-md md:hidden"
       >
         <div className="flex flex-col gap-1 px-6 pb-8 pt-2">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="border-b border-ink/10 py-4 font-display text-3xl font-semibold text-ink"
-            >
-              {l.label}
-            </a>
-          ))}
-          <a
-            href="#contact"
+          {links.map((l) => {
+            const isActive = location.pathname === l.href;
+            return (
+              <Link
+                key={l.href}
+                to={l.href}
+                onClick={() => setOpen(false)}
+                className={`border-b border-ink/10 py-4 font-display text-3xl font-semibold transition-colors ${
+                  isActive ? "text-crimson" : "text-ink"
+                }`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
+          <Link
+            to="/contact"
             onClick={() => setOpen(false)}
-            className="mt-6 inline-block w-fit rounded-full bg-crimson px-6 py-3 font-sans text-sm text-ivory"
+            className="mt-6 inline-block w-fit rounded-full bg-crimson px-6 py-3 font-sans text-sm text-ivory shadow-lg shadow-crimson/20"
           >
             Start a project →
-          </a>
+          </Link>
         </div>
       </motion.div>
     </motion.header>
