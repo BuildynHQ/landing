@@ -10,7 +10,7 @@
   --color-crimson-deep: #ff6b5c;
   --color-crimson-muted: #f05a4b;
 
-  --font-display: "Cabinet Grotesk", "General Sans", sans-serif;
+  --font-display: "Satoshi", "General Sans", sans-serif;
   --font-sans: "General Sans", "Satoshi", sans-serif;
   --font-serif: "Instrument Serif", serif;
 }
@@ -22,6 +22,16 @@
 * {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 500;
 }
 
 html,
