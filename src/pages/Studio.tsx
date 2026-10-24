@@ -219,6 +219,97 @@ export default function Studio() {
           </div>
         </div>
 
+        {/* Founder & Engineering Leadership */}
+        <div className="mb-32">
+          <Reveal>
+            <div className="rounded-3xl border border-ink/10 bg-paper/60 p-8 sm:p-14 lg:p-16 backdrop-blur-md">
+              <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+                <div>
+                  <div className="flex items-center gap-3">
+                    <span className="h-px w-10 bg-crimson" />
+                    <span className="font-sans text-xs uppercase tracking-[0.35em] text-crimson">
+                      Leadership &amp; Engineering
+                    </span>
+                  </div>
+
+                  <h2 className="mt-6 font-display text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-ink leading-[1.05]">
+                    Founded &amp; led by{" "}
+                    <span className="font-serif font-normal italic text-crimson">
+                      Pushkar Mhatre.
+                    </span>
+                  </h2>
+
+                  <p className="mt-6 font-sans text-base sm:text-lg leading-relaxed text-ink-soft">
+                    Buildyn was created by Pushkar Mhatre — a full-stack web and AI developer based in Mumbai. Rejecting the disconnect between superficial agency mockups and fragmented software development, Pushkar oversees every build directly: from UX ergonomics and custom design systems to TypeScript, backend APIs, real-time state, and AI workflows.
+                  </p>
+
+                  <div className="mt-8 flex flex-wrap items-center gap-4">
+                    <a
+                      href="https://pushkar-mhatre.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group inline-flex items-center gap-2.5 rounded-full bg-ink px-7 py-3.5 font-sans text-xs sm:text-sm uppercase tracking-[0.15em] text-ivory transition-all duration-500 hover:bg-crimson"
+                    >
+                      <span>Explore Personal Portfolio</span>
+                      <span className="transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-0.5">
+                        ↗
+                      </span>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/pushkar-buildyn/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-ink/20 px-6 py-3.5 font-sans text-xs sm:text-sm uppercase tracking-[0.15em] text-ink transition-all duration-500 hover:border-crimson hover:text-crimson"
+                    >
+                      LinkedIn ↗
+                    </a>
+                    <a
+                      href="https://github.com/sgpushkar"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-ink/20 px-6 py-3.5 font-sans text-xs sm:text-sm uppercase tracking-[0.15em] text-ink transition-all duration-500 hover:border-crimson hover:text-crimson"
+                    >
+                      GitHub ↗
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-between rounded-2xl border border-ink/10 bg-ink/[0.02] p-6 sm:p-8">
+                  <div>
+                    <span className="font-mono text-xs uppercase tracking-[0.25em] text-crimson">
+                      Core Specializations //
+                    </span>
+                    <h3 className="mt-3 font-display text-xl sm:text-2xl font-bold text-ink">
+                      Direct engineering execution
+                    </h3>
+                    <p className="mt-3 font-sans text-sm leading-relaxed text-ink-soft">
+                      No intermediaries or account directors. Every technical decision, data schema, and interactive animation is crafted and audited with obsessive attention to detail.
+                    </p>
+                  </div>
+
+                  <div className="mt-8 flex flex-wrap gap-2 border-t border-ink/10 pt-6">
+                    {[
+                      "Full-Stack Web Applications",
+                      "Next.js & React Architecture",
+                      "AI Agent Workflows & LLM Integration",
+                      "Bespoke UI/UX Design Systems",
+                      "Scalable REST & GraphQL APIs",
+                      "Real-Time WebSockets & Media Pipelines",
+                    ].map((skill) => (
+                      <span
+                        key={skill}
+                        className="rounded-full border border-ink/10 bg-paper px-3 py-1 font-sans text-xs text-ink-soft"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+
         {/* CTA */}
         <div className="rounded-3xl border border-ink/10 bg-paper/60 p-8 sm:p-16 backdrop-blur-md">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">

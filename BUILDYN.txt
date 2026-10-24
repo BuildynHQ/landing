@@ -1,0 +1,197 @@
+================================================================================
+BUILDYN - DIGITAL PRODUCT & SOFTWARE ENGINEERING STUDIO
+================================================================================
+
+1. OVERVIEW & IDENTITY
+--------------------------------------------------------------------------------
+Website:        https://buildyn.in/
+Email:          hello@buildyn.in
+Headquarters:   India (Serving Clients Worldwide)
+Founded:        2026
+Founder:        Pushkar Mhatre (https://pushkar-mhatre.vercel.app/)
+LinkedIn:       https://www.linkedin.com/in/pushkar-buildyn/
+GitHub:         https://github.com/sgpushkar
+Core Focus:     Digital Products, SaaS Platforms & Custom Software Systems
+
+Tagline:
+"Digital products and software engineered."
+
+Manifesto:
+"We don't just design interfaces. We engineer complete digital systems — 
+robust architecture, tactile UX, and enduring products built to perform."
+
+Who We Are:
+Buildyn is an independent digital product and software engineering studio.
+Unlike conventional design agencies that stop at Figma mockups or outsourced dev 
+shops that compromise on aesthetics, Buildyn bridges high-end creative art 
+direction with deep technical engineering — designing and building complete 
+digital products from concept and architecture to production deployment.
+
+
+2. CORE PHILOSOPHY & OPERATING PRINCIPLES
+--------------------------------------------------------------------------------
+Foundational Pillars:
+  01 // Architecture underpins every interface
+        Design without engineering integrity is a facade. We build solid data 
+        models, scalable backend systems, and clean front-ends together.
+        
+  02 // Clarity over unnecessary complexity
+        Whether constructing high-density admin consoles or public landing 
+        pages, every interaction is engineered for speed, human ergonomics, 
+        and effortless comprehension.
+        
+  03 // Craft in every layer of code
+        From database indexes to pixel-perfect micro-animations, we reject 
+        sloppy shortcuts. Every line of TypeScript, CSS, and API logic is 
+        written with precision.
+        
+  04 // Longevity is our engineering standard
+        We architect digital products that endure — scalable codebases, modular 
+        component systems, and resilient infrastructure ready for long-term growth.
+
+How We Operate:
+  • Zero Templates, Ever: No starter themes or fragile visual builders. Every 
+    system is custom-built with modern engineering standards.
+  • Design Meets Deep Tech: No friction between designers and engineers. We build 
+    the actual technology behind the designs (APIs, databases, state, and UI).
+  • Full-Lifecycle Delivery: From initial roadmap and wireframes to cloud 
+    infrastructure, CI/CD, and live monitoring.
+  • Founder-to-Engineer Direct: Clients collaborate directly with the core product 
+    designers and engineers building the system. No middlemen or account managers.
+  • 100% Ownership: Complete handover of design tokens, Figma files, databases, 
+    and Git source code with zero vendor lock-in.
+
+
+3. CAPABILITIES & SERVICES
+--------------------------------------------------------------------------------
+01. Full-Stack Web Apps & SaaS
+    • Scalable digital products engineered from data layer to interface
+    • End-to-end application architecture (React / Next.js / TypeScript)
+    • Robust state management & real-time data sync
+    • Authentication, RBAC & multi-tenancy
+    • Cloud infrastructure & CI/CD automation
+
+02. Admin Dashboards & Internal Business Software
+    • High-density data tables, sorting, and advanced filtering
+    • Interactive metrics, visualizations, and live analytics
+    • Role-based permissions, access controls & audit logs
+    • Workflow automation & custom CRUD operations
+    • Third-party integrations (CRM, payment, ERP)
+
+03. Marketing Websites & Digital Flagships
+    • Custom art direction & responsive layouts
+    • Cinematic motion, micro-interactions & tactile transitions
+    • High-converting landing funnels
+    • Technical SEO, OpenGraph & structured data markup
+    • Performance optimization & sub-second Time-to-Interactive (TTI)
+
+04. UI/UX & Design Systems
+    • Comprehensive Figma design token systems
+    • Ergonomic product wireframing & user journeys
+    • Interactive high-fidelity prototypes
+    • Production-ready component libraries
+    • Accessibility standards (WCAG) & micro-copy design
+
+05. Custom Software Systems & APIs
+    • RESTful & GraphQL API design
+    • Relational (PostgreSQL/MySQL) & Document (MongoDB) modeling
+    • Webhook handlers & payment pipelines (e.g., Stripe)
+    • Security hardening, rate limiting, and authentication
+    • Serverless functions & background worker queues
+
+06. Interactive Experiences & Creative Tech
+    • 3D WebGL scenes and shaders with Three.js
+    • Custom canvas rendering & physics-based motion
+    • Dynamic audio & micro-haptics
+    • Gamified product walkthroughs & interactive demonstrations
+
+
+4. ENGINEERING METHODOLOGY (5 PHASES)
+--------------------------------------------------------------------------------
+Phase 01: Discovery & System Architecture
+  • Product roadmap, user objectives, and feature scoping
+  • Data modeling, schema architecture & API planning
+  • Technical stack selection & infrastructure setup
+
+Phase 02: Strategy, User Flows & Wireframes
+  • User journeys & state transition diagrams
+  • Information architecture hierarchy & low-fidelity wireframing
+  • Operational funnel mapping & technical feasibility checks
+
+Phase 03: UI/UX & Design Systems
+  • Pixel-precise responsive layouts in Figma
+  • Comprehensive design token libraries
+  • Interactive prototypes & micro-interactions calibration
+
+Phase 04: Full-Stack Engineering & APIs
+  • Clean TypeScript, React / Next.js architecture
+  • Backend APIs, databases & third-party integrations
+  • Auth, security, and state management implementation
+
+Phase 05: Deployment, Testing & Launch
+  • Cross-device QA, edge-case testing, and security hardening
+  • Technical SEO, metadata, and performance audits
+  • Automated CI/CD pipelines & production cloud launch
+
+
+5. FEATURED PORTFOLIO WORK
+--------------------------------------------------------------------------------
+Project:     WispEcho (2026)
+Category:    Full-Stack Web App · Platform
+URL:         https://wisp-echo.vercel.app/
+Role:        System Architecture, UI/UX Design & Full-Stack Engineering
+Highlights:  A high-performance real-time messaging application engineered with 
+             end-to-end security. Features ephemeral View-Once media pipelines, 
+             instant websocket state synchronization, custom authentication, 
+             and a responsive glassmorphic UI.
+
+Project:     Sonder Cafe (2025)
+Category:    Digital Flagship · Web Platform
+URL:         https://sonder-cafe.vercel.app/
+Role:        Brand Identity, Interactive Architecture & Front-End Engineering
+Highlights:  A bespoke spatial design portfolio and interactive architecture 
+             platform with tactile transitions, dynamic typographic rhythm, 
+             custom CMS content architecture, and sub-second performance.
+
+Project:     Sienvera (2025)
+Category:    E-Commerce System · Platform
+URL:         https://sienvera.vercel.app/
+Role:        Brand Architecture, UI/UX System & Platform Development
+Highlights:  An editorial digital commerce platform engineered for an 
+             avant-garde fashion house. Features fluid cart state synchronization, 
+             high-fidelity visual pacing, payment integration, and responsive 
+             micro-interactions.
+
+
+6. ENGAGEMENT MODELS
+--------------------------------------------------------------------------------
+Model 01: Project-Based Sprint
+  • Fixed scope, clear architectural milestones, and dedicated sprint execution.
+  • Delivery timeline: 2 to 8 weeks.
+  • Weekly working demos and complete handover of assets & source code.
+
+Model 02: Product Retainer
+  • Ongoing product partnership acting as an embedded design & software team.
+  • Dedicated weekly sprint capacity for continuous feature rollout.
+  • Direct Slack/Discord channel access with priority execution.
+
+
+7. PLATFORM TECHNICAL SPECIFICATIONS
+--------------------------------------------------------------------------------
+Framework & Core:    React 19, TypeScript, Vite
+Styling System:      Tailwind CSS v4 (Palette: Paper #0a0606, Ink #f4efe6, Crimson #c0382b)
+Motion & Scroll:     Lenis (smooth inertia scrolling), Framer Motion, GSAP
+3D & Creative Tech:  Three.js WebGL procedural scenes, filmic tone mapping & shaders
+Serverless / API:    Vercel Serverless Functions (/api/contact)
+Communications:      Resend API email delivery pipelines with HTML sanitization
+Typography:          Cabinet Grotesk, Satoshi, General Sans, Instrument Serif
+
+
+8. CONTACT & INQUIRIES
+--------------------------------------------------------------------------------
+Website:        https://buildyn.in/
+Founder Site:   https://pushkar-mhatre.vercel.app/
+Inquiries:      hello@buildyn.in
+Turnaround:     Responses within 48 hours
+Locations:      India / Remote Worldwide
+================================================================================
