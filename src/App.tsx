@@ -5,6 +5,7 @@ import { Loader } from "./components/Loader";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { SEOTracker } from "./components/SEOTracker";
 import Home from "./pages/Home";
 
 const Work = lazy(() => import("./pages/Work"));
@@ -40,6 +41,7 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
+      <SEOTracker />
       <Loader onComplete={() => setLoaded(true)} />
       {loaded ? (
         <Suspense fallback={null}>

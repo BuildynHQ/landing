@@ -106,9 +106,42 @@ export function Footer() {
               >
                 Start a project →
               </Link>
+              <a
+                href="https://www.pushkarmhatre.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-1 font-sans text-sm text-ink transition-colors hover:text-crimson"
+              >
+                <span>Founder Portfolio</span>
+                <span className="text-crimson transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  ↗
+                </span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/pushkar-buildyn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-1 font-sans text-sm text-ink-soft transition-colors hover:text-ink"
+              >
+                <span>LinkedIn</span>
+                <span className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  ↗
+                </span>
+              </a>
+              <a
+                href="https://github.com/sgpushkar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-1 font-sans text-sm text-ink-soft transition-colors hover:text-ink"
+              >
+                <span>GitHub</span>
+                <span className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  ↗
+                </span>
+              </a>
               <Link
                 to="/privacy-policy"
-                className="font-sans text-sm text-ink-soft transition-colors hover:text-ink"
+                className="pt-1 font-sans text-xs text-ink-soft/70 transition-colors hover:text-ink"
               >
                 Privacy Policy
               </Link>
@@ -116,20 +149,28 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-20 flex flex-col items-start justify-between gap-3 border-t border-ink/10 pt-6 text-ink-soft/60 sm:flex-row sm:items-center">
+        <div className="mt-20 flex flex-col items-start justify-between gap-4 border-t border-ink/10 pt-6 text-ink-soft/60 sm:flex-row sm:items-center">
           <span className="font-sans text-xs">
             © {new Date().getFullYear()} BUILDYN Studio. All rights reserved.
           </span>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <span className="font-sans text-xs">
+              Founded &amp; engineered by{" "}
+              <a
+                href="https://www.pushkarmhatre.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink underline underline-offset-4 decoration-ink/20 transition-colors hover:text-crimson hover:decoration-crimson"
+              >
+                Pushkar Mhatre
+              </a>
+            </span>
             <Link
               to="/privacy-policy"
               className="font-sans text-xs transition-colors hover:text-ink"
             >
               Privacy
             </Link>
-            <span className="font-sans text-xs">
-              Designed &amp; built with intention.
-            </span>
           </div>
         </div>
       </div>

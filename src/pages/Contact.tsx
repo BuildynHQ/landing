@@ -80,10 +80,9 @@ function Field({
 type FormState = "idle" | "sending" | "sent";
 
 const socials = [
-  { label: "Dribbble", href: "https://dribbble.com" },
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "X / Twitter", href: "https://x.com" },
+  { label: "Founder Portfolio", href: "https://www.pushkarmhatre.in/" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/pushkar-buildyn/" },
+  { label: "GitHub", href: "https://github.com/sgpushkar" },
 ];
 
 const contactSteps = [
@@ -95,7 +94,7 @@ const contactSteps = [
   {
     n: "02",
     title: "We reply within 48h",
-    body: "A real human, usually the founder.",
+    body: "Direct reply from Pushkar Mhatre (Founder & Lead Developer).",
   },
   {
     n: "03",
@@ -228,7 +227,22 @@ export default function Contact() {
                   </span>
                 </a>
 
-                <dl className="mt-6 grid grid-cols-2 gap-4 border-t border-ink/10 pt-4 font-sans">
+                <dl className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-ink/10 pt-4 font-sans">
+                  <div>
+                    <dt className="text-[10px] uppercase tracking-[0.3em] text-ink-soft">
+                      Founder
+                    </dt>
+                    <dd className="mt-1 text-sm text-ink">
+                      <a
+                        href="https://www.pushkarmhatre.in/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-4 decoration-ink/20 transition-colors hover:text-crimson hover:decoration-crimson"
+                      >
+                        Pushkar Mhatre ↗
+                      </a>
+                    </dd>
+                  </div>
                   <div>
                     <dt className="text-[10px] uppercase tracking-[0.3em] text-ink-soft">
                       Location
