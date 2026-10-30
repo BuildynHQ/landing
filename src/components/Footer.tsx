@@ -107,7 +107,7 @@ export function Footer() {
                 Start a project →
               </Link>
               <a
-                href="https://pushkar-mhatre.vercel.app/"
+                href="https://www.pushkarmhatre.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-1 font-sans text-sm text-ink transition-colors hover:text-crimson"
@@ -157,7 +157,7 @@ export function Footer() {
             <span className="font-sans text-xs">
               Founded &amp; engineered by{" "}
               <a
-                href="https://pushkar-mhatre.vercel.app/"
+                href="https://www.pushkarmhatre.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink underline underline-offset-4 decoration-ink/20 transition-colors hover:text-crimson hover:decoration-crimson"

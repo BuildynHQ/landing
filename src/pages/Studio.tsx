@@ -245,7 +245,7 @@ export default function Studio() {
 
                   <div className="mt-8 flex flex-wrap items-center gap-4">
                     <a
-                      href="https://pushkar-mhatre.vercel.app/"
+                      href="https://www.pushkarmhatre.in/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group inline-flex items-center gap-2.5 rounded-full bg-ink px-7 py-3.5 font-sans text-xs sm:text-sm uppercase tracking-[0.15em] text-ivory transition-all duration-500 hover:bg-crimson"

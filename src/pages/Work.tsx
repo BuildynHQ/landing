@@ -132,7 +132,7 @@ export default function Work() {
             <p className="mt-8 max-w-xl font-sans text-base leading-relaxed text-ink-soft sm:text-lg">
               A curated catalog of full-stack web applications, custom digital products, SaaS platforms, and brand flagships engineered by Buildyn and founder{" "}
               <a
-                href="https://pushkar-mhatre.vercel.app/"
+                href="https://www.pushkarmhatre.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink underline underline-offset-4 decoration-ink/20 transition-colors hover:text-crimson hover:decoration-crimson"
@@ -141,7 +141,7 @@ export default function Work() {
               </a>
               . For personal experiments, AI tools, and code repositories, visit his{" "}
               <a
-                href="https://pushkar-mhatre.vercel.app/works"
+                href="https://www.pushkarmhatre.in/works"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink underline underline-offset-4 decoration-ink/20 transition-colors hover:text-crimson hover:decoration-crimson"

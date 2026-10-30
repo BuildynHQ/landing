@@ -80,7 +80,7 @@ function Field({
 type FormState = "idle" | "sending" | "sent";
 
 const socials = [
-  { label: "Founder Portfolio", href: "https://pushkar-mhatre.vercel.app/" },
+  { label: "Founder Portfolio", href: "https://www.pushkarmhatre.in/" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/pushkar-buildyn/" },
   { label: "GitHub", href: "https://github.com/sgpushkar" },
 ];
@@ -234,7 +234,7 @@ export default function Contact() {
                     </dt>
                     <dd className="mt-1 text-sm text-ink">
                       <a
-                        href="https://pushkar-mhatre.vercel.app/"
+                        href="https://www.pushkarmhatre.in/"
                         target="_blank"
                         rel="noreferrer"
                         className="underline underline-offset-4 decoration-ink/20 transition-colors hover:text-crimson hover:decoration-crimson"
